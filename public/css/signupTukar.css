@@ -1,0 +1,43 @@
+input[type=text], select {
+    width: 100%;
+    padding: 8px 12px;
+    margin: 7px 0;
+    display: inline-block;
+    border: 1px solid red;
+    border-radius: 4px;
+    box-sizing: border-box;
+  
+}
+
+h2{
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 30px;
+  }
+
+.sign {
+  width: 100px;
+  height: 25px;
+  margin: 15px auto;
+  }
+
+.sad {
+   width: 420px;
+    padding: 80px;
+    background-color:lightgrey;
+    opacity:0.9;
+    border-radius: 10px;
+    border-top: 5px solid #ff656c;
+    margin: 0 auto;
+
+     }
+  form{
+    font-size: 20px;
+  }
+body{
+background-image:url(bg.jpg);
+   background-size:1400px 680px;
+background-repeat:no-repeat;
+
+
+  }

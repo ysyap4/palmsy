@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2016-12-12T02:23:36 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="palmTreee" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isFloatColumnFooter="true" whenResourceMissingType="Error" uuid="22f9f6e8-1337-4072-9011-9ef96789fbaf">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="PalmsyNew"/>
+	<parameter name="id" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[SELECT *
+FROM palmtree]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="image_filename" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="image_palmtree" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="general_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="scientific_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="product_type" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="gene" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="description" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ins_index" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sub_index" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="created_at" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="updated_at" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="123" splitType="Stretch">
+			<staticText>
+				<reportElement x="147" y="31" width="255" height="60" uuid="5061615a-2d14-4b6e-bc09-25d2473b6b5e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bodoni MT Black" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LIST OF PALM TREE]]></text>
+			</staticText>
+			<image>
+				<reportElement x="10" y="12" width="127" height="90" uuid="4a89bc45-4c9c-44da-8897-f949e385fcb1"/>
+				<imageExpression><![CDATA["C:/Users/User-ASUS/JaspersoftWorkspace/MyReports/utmlogo.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="380" y="12" width="165" height="111" uuid="f0861e2a-9f47-495a-a768-8319144a2bc8"/>
+				<imageExpression><![CDATA["C:/Users/User-ASUS/JaspersoftWorkspace/MyReports/palmsy.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="38" splitType="Stretch">
+			<textField pattern="dd MMMMM , yyyy">
+				<reportElement x="425" y="9" width="120" height="20" uuid="5d542ea3-0d0f-4dbe-b73b-2cdc47b9610a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="DejaVu Sans" size="9" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="50" y="0" width="95" height="40" backcolor="#62E04F" uuid="b5346760-ae98-43e2-9060-0d10bc4893da"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[General Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="1" y="-1" width="50" height="40" backcolor="#62E04F" uuid="d98c5452-e90d-4ee4-bccb-a3630707ec19"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[NO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="144" y="0" width="104" height="40" backcolor="#62E04F" uuid="576a0947-e480-48b4-9c51-fb06d8fb50a8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Scientific Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="249" y="0" width="82" height="39" backcolor="#62E04F" uuid="5df6e807-4373-42bf-8533-d4a1595055d1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Product Type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="331" y="0" width="104" height="39" backcolor="#62E04F" uuid="bbdefb38-d09d-4ee7-81dc-6efbd2de5550"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Gene Sequence]]></text>
+			</staticText>
+			<staticText>
+				<reportElement stretchType="RelativeToBandHeight" mode="Opaque" x="436" y="0" width="122" height="40" backcolor="#62E04F" uuid="60629f58-6203-4560-8764-b4fec3716f2f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Description]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="40" width="559" height="1" uuid="f7f0553c-45a4-4425-b3eb-f5c07a22b0af"/>
+			</line>
+			<line>
+				<reportElement x="0" y="-1" width="1" height="43" uuid="4b213ac2-4c17-444b-9f4c-e2bb985e54bb"/>
+			</line>
+			<line>
+				<reportElement x="558" y="-2" width="1" height="43" uuid="3c06c0a4-7f12-4f73-ac01-0aa66e1c4718"/>
+			</line>
+			<line>
+				<reportElement x="50" y="-1" width="1" height="43" uuid="1aa7a381-e3b4-4c7d-9372-8574abe7469c"/>
+			</line>
+			<line>
+				<reportElement x="144" y="-1" width="1" height="43" uuid="1d302b43-c0f5-46ea-91d4-8a30ce102018"/>
+			</line>
+			<line>
+				<reportElement x="248" y="-1" width="1" height="43" uuid="a093e631-aa9f-4a81-827b-13e9911f6056"/>
+			</line>
+			<line>
+				<reportElement x="331" y="-1" width="1" height="43" uuid="93847a8b-62d3-4d8e-a82c-050b8032a47a"/>
+			</line>
+			<line>
+				<reportElement x="435" y="-1" width="1" height="43" uuid="066e2b11-72d4-45c5-8646-ff7168c01d97"/>
+			</line>
+			<line>
+				<reportElement x="0" y="-1" width="559" height="1" uuid="6a47b9f9-6acc-4444-af5a-9d33b940f770"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="35" splitType="Stretch">
+			<textField>
+				<reportElement x="50" y="-1" width="95" height="31" uuid="861c2d22-9c61-4859-9a41-25098613207e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{general_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="6" y="9" width="34" height="21" uuid="460dbb0f-9f97-4a26-ad79-4acb0c5237d9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="144" y="0" width="104" height="30" uuid="b19a8963-b6e8-4d43-8c1b-8bdb76c482d9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{scientific_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="249" y="-1" width="82" height="31" uuid="6410bc89-9da2-4074-a75b-9d2865e16198"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{product_type}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="331" y="0" width="105" height="34" uuid="d49c2331-5bfd-491c-8058-66e0d2214d1e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{gene}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" x="436" y="-1" width="123" height="36" uuid="a3c0e57f-f70e-45c8-aea4-58ccb70ecb11"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{description}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="34" width="558" height="1" uuid="fe6b1d50-de42-4789-8919-1f265ec97bab"/>
+			</line>
+			<line>
+				<reportElement x="0" y="-2" width="1" height="37" uuid="605ede05-9f80-4e9e-bc92-46d57892261b"/>
+			</line>
+			<line>
+				<reportElement x="50" y="-2" width="1" height="36" uuid="b81cdfd0-c67a-40a3-b5c3-fd6930596961"/>
+			</line>
+			<line>
+				<reportElement x="144" y="-2" width="1" height="36" uuid="921f1dfa-afce-4b49-8b88-29656101d96f"/>
+			</line>
+			<line>
+				<reportElement x="248" y="-2" width="1" height="36" uuid="65ea32a6-613c-4283-9902-bf64d0ac3b52"/>
+			</line>
+			<line>
+				<reportElement x="331" y="-2" width="1" height="36" uuid="0230497b-a75d-4259-9093-a64aa94d1452"/>
+			</line>
+			<line>
+				<reportElement x="435" y="-2" width="1" height="36" uuid="0aa2d50e-35a3-4e6d-84de-5f392906da92"/>
+			</line>
+			<line>
+				<reportElement x="558" y="-1" width="1" height="36" uuid="345b7759-0042-43a7-8543-4ddb84eae77e"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="46" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2016-12-12T03:15:54 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="modificationDetail2" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="691b91f8-b64e-419b-9a30-a593dc2c6a5e">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="PalmsyNew"/>
+	<parameter name="idModify" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[select * from palmtree,modification
+where  modification.id =$P{idModify}]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="image_filename" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="image_palmtree" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="general_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="scientific_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="product_type" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="gene" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="description" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ins_index" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sub_index" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="created_at" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="updated_at" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="COLUMN_13" class="java.lang.Integer"/>
+	<field name="COLUMN_14" class="java.lang.String"/>
+	<field name="ori_seq" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="mod_seq" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="mod_type" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="COLUMN_18" class="java.sql.Timestamp"/>
+	<field name="COLUMN_19" class="java.sql.Timestamp"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="100" splitType="Stretch">
+			<staticText>
+				<reportElement x="200" y="20" width="170" height="50" uuid="93ac0732-1fec-47f3-bfdb-fef081473a28"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MODIFICATION DETAIL]]></text>
+			</staticText>
+			<image>
+				<reportElement x="20" y="10" width="170" height="80" uuid="5872b200-ca4d-48e4-b496-ecf242eb7a30"/>
+				<imageExpression><![CDATA["C:/Users/User-ASUS/JaspersoftWorkspace/MyReports/utmlogo.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="380" y="10" width="170" height="90" uuid="208e1981-d568-4c38-b801-eb2d81b49212"/>
+				<imageExpression><![CDATA["C:/Users/User-ASUS/JaspersoftWorkspace/MyReports/palmsy.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="80" splitType="Stretch">
+			<textField>
+				<reportElement x="180" y="5" width="200" height="60" uuid="39c89883-7312-42ff-af02-83d182a65712"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Berlin Sans FB" size="19" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{general_name}.toUpperCase()]]></textFieldExpression>
+			</textField>
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement x="410" y="40" width="147" height="28" uuid="12cec249-0732-45d8-b544-b19c7cba2999"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="426" splitType="Stretch">
+			<rectangle>
+				<reportElement x="10" y="1" width="539" height="409" uuid="584e094a-9feb-47ea-870a-4a4539be4e00"/>
+				<graphicElement>
+					<pen lineWidth="3.0" lineStyle="Double" lineColor="#65EB70"/>
+				</graphicElement>
+			</rectangle>
+			<image>
+				<reportElement x="232" y="10" width="110" height="120" uuid="686a9ed8-4cd6-48ad-95b1-caa235187811"/>
+				<imageExpression><![CDATA["http://localhost//palmsy//public//img//portfolio//thumbnails//"+$F{image_palmtree}]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="185" y="140" width="185" height="20" uuid="8494a2be-66ee-4b6c-ba2b-db722d46f4e5"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[General Name]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="155" y="163" width="230" height="27" uuid="2d05f40c-31b1-4508-848b-c5f657099321"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{general_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="185" y="220" width="191" height="30" uuid="844c801d-5d27-4db5-8f12-68d429088b2f"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{scientific_name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="185" y="200" width="185" height="30" uuid="847e646a-8214-4094-8e3b-ad48dd842e9a"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Scientific Name]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="135" y="270" width="260" height="20" uuid="c6368f33-2ebc-4573-abc4-3ace7671e722"/>
+				<textElement textAlignment="Center">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{product_type}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="175" y="250" width="185" height="20" uuid="acc155f3-aa47-4d7d-bd73-9d3f641e3994"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Product Type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="185" y="300" width="185" height="20" uuid="5b58b004-05fe-4650-87cd-8b35faee0e16"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Gene Sequence]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="65" y="330" width="185" height="20" uuid="267fdf36-f46c-490b-bed3-7f87b4461f01"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Original Sequence]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="65" y="360" width="185" height="20" uuid="797580e6-0b55-4d07-98c8-5d392622c3ca"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Modify Sequence]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="270" y="330" width="245" height="20" uuid="21883512-3c10-43b2-82ca-6c7db1e6ff44"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ori_seq}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="265" y="360" width="250" height="30" uuid="ba51a23e-2318-4f94-bd41-e719191c06e7"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mod_seq}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+</jasperReport>

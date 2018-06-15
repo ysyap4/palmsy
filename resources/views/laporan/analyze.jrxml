@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2016-12-12T02:03:38 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="analyze" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="47637afe-ecac-4572-9c17-4a01f7e58cd5">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="PalmsyNew"/>
+	<queryString>
+		<![CDATA[select * from analyzation]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="mod_id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="scientific_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="mod_type" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rgr_value" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rgr_description" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="wp_value" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="wp_description" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sn_value" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sn_description" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="created_at" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="updated_at" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="106" splitType="Stretch">
+			<staticText>
+				<reportElement x="157" y="30" width="210" height="50" uuid="fda8a72f-01ea-4d6a-a55c-55937db18bcf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ANALYZATION LIST]]></text>
+			</staticText>
+			<image>
+				<reportElement x="9" y="10" width="148" height="81" uuid="3537bbce-1117-47fc-8854-7c3ebea8ce51"/>
+				<imageExpression><![CDATA["C:/Users/User-ASUS/JaspersoftWorkspace/MyReports/utmlogo.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="390" y="10" width="165" height="81" uuid="99b59e1c-a9bd-4806-8bdc-4dcb8709d84d"/>
+				<imageExpression><![CDATA["C:/Users/User-ASUS/JaspersoftWorkspace/MyReports/palmsy.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="50" splitType="Stretch">
+			<textField pattern="dd MMMMM  yyyy">
+				<reportElement x="420" y="10" width="117" height="35" uuid="b00c342d-b643-4ab7-b102-78a52c8cf8d1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="73" splitType="Stretch">
+			<staticText>
+				<reportElement mode="Opaque" x="9" y="0" width="71" height="65" backcolor="#59EB5C" uuid="4561f0b5-d634-4cc3-8020-9541ebc2ba1a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled"/>
+				<text><![CDATA[SCIENTIFIC NAME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="81" y="-2" width="78" height="68" backcolor="#59EB5C" uuid="e1c1d62b-1595-431b-aca8-e800263131d8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled"/>
+				<text><![CDATA[MODIFICATION TYPE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="157" y="0" width="68" height="66" backcolor="#59EB5C" uuid="7d822399-b808-4fda-b378-7be83a4fced4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled"/>
+				<text><![CDATA[RELATIVE GROWTH RATE VALUE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="225" y="-2" width="71" height="68" backcolor="#59EB5C" uuid="ea02052b-e17f-4b87-8380-c5f3e75bd834"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled"/>
+				<text><![CDATA[RELATIVE GROWTH RATE DESCRIPTION]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="-15" y="0" width="24" height="64" backcolor="#59EB5C" uuid="875df0a6-ae71-4f79-b1cf-ac2151f96221"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled"/>
+				<text><![CDATA[NO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="296" y="-2" width="67" height="67" backcolor="#59EB5C" uuid="8f3a8fd7-7864-42f5-ad0b-dc328c565338"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled"/>
+				<text><![CDATA[WATER POTENTIAL VALUE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="429" y="0" width="54" height="67" backcolor="#59EB5C" uuid="eb405eee-81f7-4464-a872-6d36d757aca6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled"/>
+				<text><![CDATA[SEEDS NUMBER]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="358" y="0" width="74" height="67" backcolor="#59EB5C" uuid="587137d0-af00-47fb-8c0b-425b62f826cc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled"/>
+				<text><![CDATA[WATER POTENTIAL DESCRIPTION]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="483" y="-2" width="76" height="68" backcolor="#59EB5C" uuid="e16c04be-cb12-4351-a81d-e08442a7f656"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" markup="styled"/>
+				<text><![CDATA[SEEDS NUMBER DESCRIPTION]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-15" y="-2" width="1" height="73" uuid="c789f90b-3b8b-4f24-b4ba-d410d1e98180"/>
+			</line>
+			<line>
+				<reportElement x="10" y="-1" width="1" height="72" uuid="0a134ab4-a78b-4aa1-916a-94a9cda9b9b0"/>
+			</line>
+			<line>
+				<reportElement x="80" y="-2" width="1" height="73" uuid="75b9c9e3-0a6b-41fa-8e16-99cb3578f1ce"/>
+			</line>
+			<line>
+				<reportElement x="157" y="0" width="1" height="73" uuid="3215ea32-027e-4104-b6d9-5dc59cbd937a"/>
+			</line>
+			<line>
+				<reportElement x="224" y="0" width="1" height="73" uuid="aae0dbca-1829-45d1-bd40-6a8888e9b30c"/>
+			</line>
+			<line>
+				<reportElement x="296" y="-1" width="1" height="73" uuid="d81ce187-2989-4f42-ae79-610ceb755d0e"/>
+			</line>
+			<line>
+				<reportElement x="358" y="0" width="1" height="73" uuid="c0dca851-2fdc-463b-b2e6-d1ea8756e206"/>
+			</line>
+			<line>
+				<reportElement x="429" y="-1" width="1" height="73" uuid="6adf3125-92fa-42b5-954e-a8ae4b2f234d"/>
+			</line>
+			<line>
+				<reportElement x="483" y="-1" width="1" height="73" uuid="35f7c9db-cb1b-4961-be0d-7b395bbae89c"/>
+			</line>
+			<line>
+				<reportElement x="558" y="-2" width="1" height="73" uuid="7c8cd803-d649-476c-8870-70025b227a34"/>
+			</line>
+			<line>
+				<reportElement x="-13" y="-2" width="573" height="1" uuid="0030ec8a-3fa8-44d5-828b-a0a6233b9454"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="137" splitType="Stretch">
+			<textField>
+				<reportElement x="-7" y="10" width="17" height="37" uuid="c5e0d017-56ff-45eb-83de-caaa979b1786"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$V{REPORT_COUNT}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="16" y="3" width="54" height="44" uuid="b62b4a6b-1a4b-4d01-9389-b655143fe3f3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{scientific_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="83" y="7" width="70" height="30" uuid="d2627eaa-1b9d-4116-8b40-5d400b1a1301"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{mod_type}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="159" y="4" width="60" height="36" uuid="44d538ff-e546-47c8-99bd-aff772586486"/>
+				<textFieldExpression><![CDATA[$F{rgr_value}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="230" y="7" width="65" height="123" uuid="291796af-a2e9-48bc-a4f7-8bfded32e97f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{rgr_description}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="10" width="45" height="40" uuid="6a2eccaf-7bbe-441d-a866-822025aa4716"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{wp_value}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="10" width="30" height="37" uuid="b3e97961-61d9-4027-8258-83399cd6d233"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{sn_value}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="484" y="7" width="71" height="123" uuid="085176c4-e168-428e-9355-8f682a61bfe1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{sn_description}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="-15" y="-7" width="573" height="1" uuid="f8dca948-21e3-4d1e-ab65-4e21040d3c45"/>
+			</line>
+			<line>
+				<reportElement x="-15" y="130" width="572" height="1" uuid="04219b15-a02c-4763-9bf3-0819ab0a5912"/>
+			</line>
+			<line>
+				<reportElement x="-15" y="-11" width="1" height="141" uuid="a560ac93-fba3-4fc1-957b-7527ac12dd9b"/>
+			</line>
+			<line>
+				<reportElement x="10" y="-10" width="1" height="141" uuid="f64a28fe-df0a-4ef4-a9fe-9cc744b724a6"/>
+			</line>
+			<line>
+				<reportElement x="80" y="-9" width="1" height="141" uuid="8a0ee3c3-71e1-43de-8474-b10d17946ffa"/>
+			</line>
+			<line>
+				<reportElement x="157" y="-10" width="1" height="141" uuid="7d34af8d-e2da-4d9b-9016-5942925f97e4"/>
+			</line>
+			<line>
+				<reportElement x="224" y="-9" width="1" height="141" uuid="f4f970dd-23bf-4e4e-b65f-6cdbff4b4e5c"/>
+			</line>
+			<line>
+				<reportElement x="296" y="-9" width="1" height="141" uuid="0665ea83-8adb-435f-99b0-dac20412172a"/>
+			</line>
+			<textField>
+				<reportElement x="363" y="6" width="63" height="111" uuid="a0e77141-10e3-4635-84c2-fa73e84f0722"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{wp_description}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="358" y="-10" width="1" height="141" uuid="9de2af36-d50f-4c72-ab3d-c930a229916a"/>
+			</line>
+			<line>
+				<reportElement x="429" y="-9" width="1" height="141" uuid="1c9264eb-2d61-4603-83b4-16c36ce80380"/>
+			</line>
+			<line>
+				<reportElement x="483" y="-8" width="1" height="141" uuid="907417a5-aaa3-4685-9664-772e2d03d1c5"/>
+			</line>
+			<line>
+				<reportElement x="558" y="-8" width="1" height="141" uuid="b07aa435-863b-4108-bfca-ffd8818d79e0"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

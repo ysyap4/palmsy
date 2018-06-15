@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2016-12-12T03:57:45 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="analyzeDetail" pageWidth="595" pageHeight="842" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" whenResourceMissingType="Key" uuid="841c8175-261d-4a41-8c1e-2d947e456627">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<parameter name="idAna" class="java.lang.Integer">
+		<parameterDescription><![CDATA[]]></parameterDescription>
+	</parameter>
+	<queryString>
+		<![CDATA[select * from palmtree,analyzation
+where  analyzation.id=$P{idAna}]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="image_filename" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="image_palmtree" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="general_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="scientific_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="product_type" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="gene" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="description" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ins_index" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sub_index" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="created_at" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="updated_at" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="COLUMN_13" class="java.lang.Integer"/>
+	<field name="mod_id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="COLUMN_15" class="java.lang.String"/>
+	<field name="mod_type" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rgr_value" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rgr_description" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="wp_value" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="wp_description" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sn_value" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="sn_description" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="COLUMN_23" class="java.sql.Timestamp"/>
+	<field name="COLUMN_24" class="java.sql.Timestamp"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="92" splitType="Stretch">
+			<image>
+				<reportElement x="10" y="-5" width="150" height="89" uuid="d1209697-7a1a-4300-b859-4265a51e669f"/>
+				<imageExpression><![CDATA["C:/Users/User-ASUS/JaspersoftWorkspace/MyReports/utmlogo.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="380" y="0" width="180" height="89" uuid="19e28e29-2707-4638-9880-c023c078b0b7"/>
+				<imageExpression><![CDATA["C:/Users/User-ASUS/JaspersoftWorkspace/MyReports/palmsy.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="180" y="3" width="190" height="79" uuid="cb3336bd-a3f1-4ef2-b639-7e301d9b1643"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ANALYZATION DETAIL]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="50" splitType="Stretch">
+			<textField pattern="dd MMMMM yyyy">
+				<reportElement positionType="Float" x="396" y="10" width="132" height="39" uuid="4c152707-1df0-41cd-bb91-fb65f8f5fec8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="577" splitType="Stretch">
+			<rectangle>
+				<reportElement x="274" y="236" width="260" height="140" uuid="e686ae9a-7ac9-4b60-836d-1b0b681151c5"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Double" lineColor="#61EB54"/>
+				</graphicElement>
+			</rectangle>
+			<image>
+				<reportElement x="24" y="6" width="176" height="171" uuid="0ad32531-c27a-4dbb-bd49-10d63f1163a3"/>
+				<imageExpression><![CDATA["http://localhost//palmsy//public//img//portfolio//thumbnails//"+$F{image_palmtree}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="171" y="128" width="256" height="30" uuid="ba088f6a-f3f4-4463-bd9d-b4d5e54b827f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mod_type}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="230" y="90" width="150" height="30" uuid="2c120df3-8180-484c-a442-faa9b885dfff"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Modification Type ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="230" y="11" width="137" height="30" uuid="aec83ab2-1848-4128-8892-c201113ef78c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Scientific  Name :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="165" y="50" width="256" height="30" uuid="84adc4d9-983b-4861-8464-09bf671dff14"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{scientific_name}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="24" y="194" width="220" height="30" uuid="ba371ec5-e8cf-43de-a7db-e485c964ca77"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Relative Growth Rate(RGR)]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="287" y="250" width="100" height="30" uuid="15057e5c-fa36-41ad-810a-c1d772c4b147"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[WR Value :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="404" y="251" width="100" height="30" uuid="5d03371f-3d21-4cfc-8801-5e82c18acf03"/>
+				<textElement verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{wp_value}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="286" y="291" width="126" height="30" uuid="0d7fba44-f894-4448-9b47-5529713c8b60"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[WR Description :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="400" y="300" width="124" height="70" uuid="aab1eb6f-c15c-4c95-8c32-007fd3505bc3"/>
+				<textElement verticalAlignment="Top">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{wp_description}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="284" y="190" width="220" height="30" uuid="374f593a-6439-4158-b078-24c9ee1509d8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Water Potential (WR)]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="9" y="236" width="260" height="140" uuid="d17ac789-e8cc-406a-9d02-d180fec926e8"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Double" lineColor="#61EB54"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="24" y="247" width="100" height="30" uuid="02dbd1ff-fa82-451d-bdb9-a61f1f4b10ad"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RGR Value :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="21" y="287" width="126" height="30" uuid="c7397cf6-024c-4b90-a349-0f3e3934dc89"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RGR Description :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="126" y="247" width="100" height="30" uuid="ce1b0a9d-6aab-48b5-8147-5f1eea37c375"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{rgr_value}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="145" y="295" width="110" height="76" uuid="635bff5f-356e-437c-9b04-cb50670a715a"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{rgr_description}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="245" y="433" width="100" height="30" uuid="c1b17839-5d6f-421d-8b17-e63c648ae395"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sn_value}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="246" y="473" width="176" height="90" uuid="7fb2c952-29ec-46c2-923f-7061fedc8120"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sn_description}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="110" y="427" width="316" height="134" uuid="013d7d17-a59c-458a-8195-d96274fb3a14"/>
+				<graphicElement>
+					<pen lineWidth="2.0" lineStyle="Double" lineColor="#61EB54"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="127" y="478" width="116" height="30" uuid="a0718335-976d-425d-b508-7c0db9ddffec"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SN Description :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="130" y="437" width="100" height="30" uuid="05376ad3-5ef5-4d51-a65b-529dc4e6b271"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SN Value :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="160" y="386" width="220" height="30" uuid="9e02b7e4-a738-4c79-80b5-3a73e638a04c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SEEDS NUMBER(SN)]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="246" y="444" width="168" height="33" uuid="136d1fba-ac08-48c8-aeda-62ca4fea596d"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sn_value}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="245" y="484" width="175" height="59" uuid="eafdd92e-4c2d-4826-92c2-9c5748483efb"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{sn_description}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+</jasperReport>

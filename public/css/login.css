@@ -1,0 +1,119 @@
+
+
+input[type=text], input[type=password] {
+    width: 80%;
+    padding: 8px 15px;
+    margin: 0px 0;
+    display: inline-block;
+    border: 1px solid red;
+    box-sizing: border-box;
+    
+  }
+
+  body{
+background: url(public/img/bg.jpg);
+background-size:1400px 680px;
+background-repeat:no-repeat;
+
+
+  }
+
+
+.wrapper{
+
+width:1300px;
+height:610px;
+margin:auto; 
+background-color:white
+padding:10px; 
+
+}
+
+.content_area {
+float:left; 
+width:790px ; 
+height:560px; 
+margin-top:26px ; 
+
+}
+
+.side {
+
+width:390px ; 
+height:585px ; 
+margin-top:20px ; 
+float:right;
+background-color:lightgrey;
+opacity:0.9;
+border: 1px solid red;
+border-radius: 25px;
+ 
+ }
+
+ p{
+    text-align:center;
+    font-size:25px;
+    color:black;
+ }
+
+ .kruc{
+    width:360px ; 
+    height:500px ; 
+    margin-top:20px
+    border: 1px solid red;
+    text-align:center;
+ }
+
+ .display {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+
+
+.b {
+    background-color: green;
+    border-radius:12px;
+    color: white;
+    padding: 10px 10px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+}
+
+.c{
+    background-color:violet;
+    background-position:center;
+    border-radius:12px;
+    color: purple;
+    font-size:20px;
+    padding: 8px 10px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+
+}
+
+h1{
+    text-align:center;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style:italic;
+    color:black;
+}
+
+
+
+   
+   
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .loginbtn {
+       width: 100%;
+    }
+}

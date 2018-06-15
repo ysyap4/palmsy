@@ -1,0 +1,58 @@
+
+
+
+h1{
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 25px;
+  margin-top: 0px;
+  text-decoration-line:underline;
+  }
+
+.mira{
+  width: 150px;
+  height: 25px;
+  margin: 10px auto;
+  }
+
+.rumbia{
+   width: 520px;
+   padding: 60px;
+   background-color:lightgrey;
+   border-radius: 10px;
+   border-top: 5px solid #ff656c;
+   margin: 0 auto;
+  }
+
+  .p1
+  {
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration-line: 
+    margin-top: 10px;
+    margin-bottom:20px;
+    text-decoration-line:underline;
+  }
+
+  button{
+    background-color: violet;
+    border-radius:12px;
+    border: 1px solid purple;
+    color: purple;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+
+    body{
+background-image:url(bg.jpg);
+background-size:1400px 820px;
+background-repeat:no-repeat;
+
+
+  }
